@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'main';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'mainThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'mainLight';
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'display';
+  src: url(../fonts/Miratrix-Normal.otf);
+}
+
+@font-face {
+  font-family: 'veryBold';
+  src: url(../fonts/Roboto-Black.ttf);
+}
+
+/* line 25, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* line 28, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+::-webkit-scrollbar-track {
+  background-color: #3b3b3b02;
+}
+
+/* line 31, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+::-webkit-scrollbar-thumb {
+  background-color: #3b3b3b3f;
+  border-radius: 10px;
+}
+
+/* line 37, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-slide-shadow {
+  display: none !important;
+}
+
+/* line 40, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-button-prev {
+  content: url(../img/arrow_left.svg);
+  left: 0px !important;
+}
+
+/* line 45, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-button-next {
+  content: url(../img/arrow_right.svg);
+  right: 0px !important;
+}
+
+/* line 52, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-pagination-bullet {
+  background-color: rgba(35, 32, 32, 0.3) !important;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* line 55, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-pagination-bullet-active {
+  background-color: #FFCB03 !important;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* line 6, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+.main__home {
+  background: url("../img/background-home.webp");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc( 100vh - 80px);
+  height: fit-content;
+}
+
+/* line 18, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+.main__home__background {
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 21, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+.main__home__journey {
+  margin: 30px 50px;
+  height: fit-content;
+  max-width: 80vw;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #dddddcc4;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 12px 7px 18px 7px;
+}
+
+/* line 41, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+.main__home__journey__map__wiget {
+  border-radius: 30px;
+  box-shadow: 8px 9px 19px 0px;
+  width: 600px;
+  height: 600px;
+}
+
+/* line 51, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+.main__home__journey__info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+}
+
+/* line 60, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+.main__home__journey__info__title {
+  font-family: 'veryBold';
+  font-size: 46px;
+  font-weight: 600;
+  color: #3b3b3b;
+  margin-top: 20px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* line 66, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+.main__home__journey__info__km {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* line 73, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+.main__home__journey__info__km__box {
+  width: 350px;
+  cursor: pointer;
+  display: flex;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background-color: #29292980;
+}
+
+/* line 83, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+.main__home__journey__info__km__box__icon__svg {
+  height: 80px;
+}
+
+/* line 85, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+.main__home__journey__info__km__box__town {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 88, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+.main__home__journey__info__km__box__town__name {
+  font-family: 'main';
+  font-size: 24px;
+  text-align: center;
+  color: #dddddc;
+}
+
+/* line 93, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+.main__home__journey__info__km__box__town__number {
+  font-family: 'veryBold';
+  color: #20ac1b;
+  font-size: 64px;
+  text-align: start;
+}
+
+@media (min-width: 0px) and (max-width: 1240px) {
+  /* line 104, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+  .main__home__journey {
+    flex-direction: column;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+  }
+  /* line 109, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+  .main__home__journey__map__wiget {
+    width: 100%;
+  }
+  /* line 111, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+  .main__home__journey__info {
+    margin: 30px 0px;
+  }
+  /* line 113, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+  .main__home__journey__info__title {
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+  /* line 116, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+  .main__home__journey__info__km {
+    align-items: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1024px) {
+  /* line 133, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+  .main__home__journey__info__title {
+    font-size: 4vw;
+  }
+  /* line 136, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+  .main__home__journey__info__km__box {
+    max-width: 90%;
+  }
+  /* line 139, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+  .main__home__journey__info__km__box__icon__svg {
+    height: 8vw;
+  }
+  /* line 142, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+  .main__home__journey__info__km__box__town__name {
+    font-size: 3.5vw;
+  }
+  /* line 144, ../../home/kate/Рабочий стол/Journey/client/src/sass/home.sass */
+  .main__home__journey__info__km__box__town__number {
+    font-size: 5vw;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

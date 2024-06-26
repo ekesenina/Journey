@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'main';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'mainThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'mainLight';
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'display';
+  src: url(../fonts/Miratrix-Normal.otf);
+}
+
+@font-face {
+  font-family: 'veryBold';
+  src: url(../fonts/Roboto-Black.ttf);
+}
+
+/* line 25, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* line 28, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+::-webkit-scrollbar-track {
+  background-color: #3b3b3b02;
+}
+
+/* line 31, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+::-webkit-scrollbar-thumb {
+  background-color: #3b3b3b3f;
+  border-radius: 10px;
+}
+
+/* line 37, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-slide-shadow {
+  display: none !important;
+}
+
+/* line 40, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-button-prev {
+  content: url(../img/arrow_left.svg);
+  left: 0px !important;
+}
+
+/* line 45, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-button-next {
+  content: url(../img/arrow_right.svg);
+  right: 0px !important;
+}
+
+/* line 52, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-pagination-bullet {
+  background-color: rgba(35, 32, 32, 0.3) !important;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* line 55, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-pagination-bullet-active {
+  background-color: #FFCB03 !important;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+/*# sourceMappingURL=variables.css.map */

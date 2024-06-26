@@ -1,0 +1,145 @@
+@import 'variables'
+
+
+
+.main
+    &__home
+        background: url('../img/background-home.webp')
+        background-repeat: no-repeat
+        background-attachment: scroll
+        background-size: cover
+        // margin: 30px 50px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        min-height: calc( 100vh - 80px )
+        height: fit-content
+        &__background
+            position: absolute
+            z-index: 0
+        &__journey
+            margin: 30px 50px
+            height: fit-content
+            // min-width: 80vw
+            max-width: 80vw
+            width: fit-content
+            display: flex
+            justify-content: center
+            align-items: stretch // чтобы дочерние элементы растягивались по высоте
+            background-color: #dddddcc4
+            border-top-left-radius: 30px
+            border-bottom-left-radius: 30px
+            box-shadow: 12px 7px 18px 7px
+            // flex-grow: 1
+            &__map
+                // align-self: flex-start
+                // background-color: #dddddcc4
+                // border-top-left-radius: 30px
+                // border-bottom-left-radius: 30px
+                // padding: 20px
+                &__wiget
+                    border-radius: 30px
+                    // margin-right: 50px
+                    box-shadow: 8px 9px 19px 0px
+                    // max-width: 40vw
+                    // max-height: 40vw
+                    width: 600px
+                    height: 600px
+                    // min-width: 40vw
+                    // min-height: 40vw
+            &__info
+                // flex-grow: 1 // чтобы элемент занимал все свободное место
+                height: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                // background-color: #dddddcc4
+                padding: 0px 20px 0px 20px
+                &__title
+                    @include title
+                    color: $secondary-color
+                    margin-top: 20px
+                    text-transform: uppercase
+                    margin-bottom: 30px
+                &__km
+                    flex-grow: 1
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    width: 100%
+                    position: relative
+                    &__box
+                        // width: 90%
+                        width: 350px
+                        cursor: pointer
+                        display: flex
+                        padding: 20px 25px
+                        margin-bottom: 20px
+                        border-radius: 30px
+                        background-color: #29292980
+                        &__icon
+                            &__svg
+                                height: 80px
+                        &__town
+                            display: flex
+                            flex-direction: column
+                            &__name
+                                font-family: 'main'
+                                font-size: 24px
+                                text-align: center
+                                color: #dddddc
+                            &__number
+                                font-family: 'veryBold'
+                                color: #20ac1b
+                                font-size: 64px
+                                text-align: start
+
+
+@media ( min-width: 0px ) and ( max-width: 1240px )
+    .main
+        &__home
+            &__background
+            &__journey
+                flex-direction: column
+                border-top-right-radius: 30px
+                border-bottom-left-radius: 0px
+                &__map
+                    &__wiget
+                        width: 100%
+                &__info
+                    margin: 30px 0px
+                    &__title
+                        margin: 0px
+                        margin-bottom: 15px
+                    &__km
+                        align-items: center
+                        &__box
+                            &__icon
+                                &__svg
+                            &__town
+                                &__name
+                                &__number
+                                    
+@media ( min-width: 0px ) and ( max-width: 1024px )
+    .main
+        &__home
+            &__background
+            &__journey
+                &__map
+                    &__wiget
+                &__info
+                    &__title
+                        font-size: 4vw
+                    &__km
+                        &__box
+                            max-width: 90%
+                            &__icon
+                                &__svg
+                                    height: 8vw
+                            &__town
+                                &__name
+                                    font-size: 3.5vw
+                                &__number
+                                    font-size: 5vw

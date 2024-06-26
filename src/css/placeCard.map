@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "placeCard.css",
+	"sources": [
+		"../sass/placeCard.sass"
+	],
+	"sourcesContent": [
+		"\n"
+	],
+	"names": [],
+	"mappings": ""
+}

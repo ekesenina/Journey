@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'main';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'mainThin';
+  src: url(../fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'mainLight';
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'display';
+  src: url(../fonts/Miratrix-Normal.otf);
+}
+
+@font-face {
+  font-family: 'veryBold';
+  src: url(../fonts/Roboto-Black.ttf);
+}
+
+/* line 25, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* line 28, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+::-webkit-scrollbar-track {
+  background-color: #3b3b3b02;
+}
+
+/* line 31, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+::-webkit-scrollbar-thumb {
+  background-color: #3b3b3b3f;
+  border-radius: 10px;
+}
+
+/* line 37, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-slide-shadow {
+  display: none !important;
+}
+
+/* line 40, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-button-prev {
+  content: url(../img/arrow_left.svg);
+  left: 0px !important;
+}
+
+/* line 45, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-button-next {
+  content: url(../img/arrow_right.svg);
+  right: 0px !important;
+}
+
+/* line 52, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-pagination-bullet {
+  background-color: rgba(35, 32, 32, 0.3) !important;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* line 55, ../../home/kate/Рабочий стол/Journey/client/src/sass/variables.sass */
+.swiper-pagination-bullet-active {
+  background-color: #FFCB03 !important;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* line 103, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.header {
+  height: 80px;
+  background-color: #3b3b3b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  box-shadow: 0px 1px 16px 0px;
+}
+
+/* line 114, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.header__logo {
+  padding: 15px 50px;
+  max-height: 60px;
+}
+
+/* line 117, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.header__logo:hover .logo-light-path {
+  fill: #ffc400 !important;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+/* line 120, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.header__content {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  height: 80px;
+}
+
+/* line 125, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.header__content__burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* line 125, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+  .header__content__burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* line 130, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.header__content__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+}
+
+@media (max-width: 768px) {
+  /* line 130, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+  .header__content__nav {
+    display: none;
+  }
+}
+
+/* line 137, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.header__content__nav .active {
+  color: #FFCB03;
+  text-decoration: none;
+  font-family: 'mainLight';
+  letter-spacing: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 32px;
+}
+
+/* line 145, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.header__content__nav__a {
+  text-decoration: none;
+  font-family: 'mainLight';
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-right: 32px;
+}
+
+/* line 153, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.header__content__nav__a:hover {
+  color: #FFCB03;
+  text-decoration: none;
+  border-top: 5px solid #FFCB03;
+  height: 46px;
+  padding-top: 29px;
+}
+
+/* line 165, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.header__content__nav__dropdown {
+  position: relative;
+  display: none;
+}
+
+/* line 171, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.active .header__content__nav__dropdown-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  position: absolute;
+  top: 100%;
+  right: 50px;
+  background-color: #3b3b3b;
+  padding: 10px;
+  z-index: 1;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 1024px) {
+  /* line 171, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+  .active .header__content__nav__dropdown-content {
+    display: none;
+  }
+}
+
+/* line 186, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.active .header__content__nav__dropdown-content__a {
+  text-decoration: none;
+  font-family: 'mainLight';
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ffffff00;
+}
+
+/* line 195, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.active .header__content__nav__dropdown-content__a:hover {
+  color: #FFCB03;
+  text-decoration: none;
+  border-bottom: 1px solid #FFCB03;
+}
+
+/* line 200, ../../home/kate/Рабочий стол/Journey/client/src/sass/header.sass */
+.header__content__nav__dropdown-content {
+  display: none;
+}
+
+/*# sourceMappingURL=header.css.map */

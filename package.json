@@ -20,6 +20,7 @@
     "react-iframe": "^1.8.5",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
+    "sass": "^1.86.0",
     "styled-components": "^6.1.11",
     "swiper": "^11.1.4",
     "util": "^0.12.5",
@@ -32,7 +33,9 @@
     "server": "nodemon server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile:sass": "sass src/sass/styles.sass src/css/styles.css --watch",
+    "compile:sass-prod": "sass src/sass/styles.sass src/css/styles.css --style=compressed"
   },
   "eslintConfig": {
     "extends": [
